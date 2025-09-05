@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #eb6517;
+}
+
+/* Improve text rendering and focus styles */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:where(a, button, [role="button"]) {
+  outline-color: var(--brand);
+}
+
+/* Subtle card shadow utility */
+.card-shadow {
+  box-shadow: 0 40px 100px -30px rgba(2, 6, 23, 0.25);
+}

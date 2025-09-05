@@ -1,16 +1,350 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Modi — Unified Commerce Control</title>
+    <meta name="description" content="Administrate multiple online stores in one place. Link products, get real-time updates, unified analytics, and smart price automations. Modern, fast, and beautifully simple." />
+  </head>
+  <body class="antialiased text-slate-800 bg-white selection:bg-[#eb6517]/15 selection:text-[#eb6517]">
+    <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200/60">
+      <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <img src="/logo.svg" alt="Modi" class="h-8 w-8" />
+          <span class="text-xl font-semibold tracking-tight">Modi</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#features" class="hover:text-[#eb6517] transition-colors">Features</a>
+          <a href="#analytics" class="hover:text-[#eb6517] transition-colors">Analytics</a>
+          <a href="#automation" class="hover:text-[#eb6517] transition-colors">Automation</a>
+          <a href="#pricing" class="hover:text-[#eb6517] transition-colors">Pricing</a>
+          <a href="#faq" class="hover:text-[#eb6517] transition-colors">FAQ</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#demo" class="hidden sm:inline-block px-4 py-2 rounded-full border border-slate-300 hover:border-[#eb6517] text-slate-700 hover:text-[#eb6517] transition-colors">Live Demo</a>
+          <a href="#cta" class="inline-block px-5 py-2.5 rounded-full bg-[#eb6517] text-white font-medium shadow-[0_10px_30px_-10px_rgba(235,101,23,0.7)] hover:shadow-[0_12px_40px_-10px_rgba(235,101,23,0.8)] transition-shadow">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="pointer-events-none absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-[#eb6517]/10 blur-3xl"></div>
+        <div class="pointer-events-none absolute top-20 -right-40 h-[500px] w-[500px] rounded-full bg-[#eb6517]/5 blur-3xl"></div>
+
+        <div class="mx-auto max-w-7xl px-6 pt-14 pb-10 md:pt-24 md:pb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <p class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full border border-slate-200 text-slate-600">
+                <span class="w-2 h-2 rounded-full bg-[#eb6517]"></span>
+                Manage every store in one place
+              </p>
+              <h1 class="mt-4 text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+                One dashboard for all your stores
+              </h1>
+              <p class="mt-4 text-base md:text-lg text-slate-600 max-w-xl">
+                Link products across platforms, monitor real‑time performance, visualize unified analytics, and automate pricing with precision. Built for scale, designed for focus.
+              </p>
+              <div class="mt-8 flex flex-wrap items-center gap-3">
+                <a href="#cta" class="px-6 py-3 rounded-full bg-[#eb6517] text-white font-medium shadow-[0_10px_30px_-10px_rgba(235,101,23,0.7)] hover:shadow-[0_12px_40px_-10px_rgba(235,101,23,0.8)] transition-shadow">Start free trial</a>
+                <a href="#features" class="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:border-[#eb6517] hover:text-[#eb6517] transition-colors">Explore features</a>
+              </div>
+              <div class="mt-8 flex items-center gap-6 text-slate-500 text-sm">
+                <div class="flex -space-x-2">
+                  <div class="w-8 h-8 rounded-full bg-slate-200 border border-white"></div>
+                  <div class="w-8 h-8 rounded-full bg-slate-300 border border-white"></div>
+                  <div class="w-8 h-8 rounded-full bg-slate-200 border border-white"></div>
+                </div>
+                <p>Trusted by multi‑brand teams and agencies</p>
+              </div>
+            </div>
+
+            <div class="relative" id="demo">
+              <div class="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-white to-slate-50 shadow-[0_40px_100px_-30px_rgba(2,6,23,0.25)]"></div>
+              <div class="rounded-2xl ring-1 ring-slate-200 overflow-hidden">
+                <div class="bg-slate-900/95 text-white text-xs px-3 py-2 flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+                  <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                  <span class="ml-2/ text-slate-300">App Preview</span>
+                </div>
+                <div class="relative">
+                  <video id="heroVideo" class="block w-full aspect-[16/10] bg-slate-100 object-cover" autoplay muted loop playsinline>
+                    <source src="/demo.mp4" type="video/mp4" />
+                  </video>
+                  <div id="videoFallback" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-50 to-white border-t border-slate-100">
+                    <div class="text-center px-6">
+                      <div class="mx-auto mb-4 w-12 h-12 rounded-full bg-[#eb6517]/15 flex items-center justify-center text-[#eb6517]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M8 5v14l11-7z"/></svg>
+                      </div>
+                      <p class="text-slate-700 font-medium">Drop a demo file at <code class="px-1.5 py-0.5 rounded bg-slate-100 border border-slate-200">public/demo.mp4</code></p>
+                      <p class="text-slate-500 text-sm mt-1">Autoplays muted. Optimized for 16:10.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature highlights -->
+      <section id="features" class="relative py-16 md:py-24">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Everything you need to stay in sync</h2>
+            <p class="mt-3 text-slate-600">Connect catalogs, monitor changes in real time, analyze performance across stores, and automate pricing with guardrails.</p>
+          </div>
+
+          <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-[#eb6517]/10 text-[#eb6517] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7.5l3 3 3-3M9 12l3 3 3-3"/></svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Linked products</h3>
+              <p class="mt-1.5 text-sm text-slate-600">Map SKUs across platforms and keep inventory, titles, and attributes consistent everywhere.</p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-[#eb6517]/10 text-[#eb6517] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h9m-9 6h18"/></svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Real‑time updates</h3>
+              <p class="mt-1.5 text-sm text-slate-600">Stream changes as they happen: stock, orders, and price adjustments across all stores.</p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-[#eb6517]/10 text-[#eb6517] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M3 3h2v18H3zM7 13h2v8H7zM11 9h2v12h-2zM15 5h2v16h-2zM19 2h2v19h-2z"/></svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Unified analytics</h3>
+              <p class="mt-1.5 text-sm text-slate-600">Bring data together for clear insights. Compare, filter, and track trends in one view.</p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-[#eb6517]/10 text-[#eb6517] flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+              </div>
+              <h3 class="mt-4 font-semibold">Price automations</h3>
+              <p class="mt-1.5 text-sm text-slate-600">Rules and schedules with floor/ceiling protection and smart rounding to maximize margin.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analytics preview -->
+      <section id="analytics" class="py-16 md:py-24 bg-slate-50/60">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div class="order-2 lg:order-1">
+              <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">See every store in one picture</h2>
+              <p class="mt-3 text-slate-600">Integrated charts let you compare revenue, conversion, and inventory health across stores without switching tabs. Drill down by channel, region, or brand.</p>
+              <ul class="mt-6 space-y-3 text-slate-600">
+                <li class="flex items-start gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-[#eb6517]/15 text-[#eb6517] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg></span> Merge KPIs from Shopify, Woo, Amazon, and more.</li>
+                <li class="flex items-start gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-[#eb6517]/15 text-[#eb6517] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg></span> Segment by product group or linked SKU sets.</li>
+                <li class="flex items-start gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-[#eb6517]/15 text-[#eb6517] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg></span> Export and share clean, branded reports.</li>
+              </ul>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <div class="grid gap-6 md:grid-cols-2">
+                  <div class="rounded-xl border border-slate-200 p-4">
+                    <div class="text-sm text-slate-500">Revenue (Last 30d)</div>
+                    <svg viewBox="0 0 320 120" class="mt-2 w-full h-32">
+                      <defs>
+                        <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#eb6517" stop-opacity="0.35"/>
+                          <stop offset="100%" stop-color="#eb6517" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M10 90 C 50 60, 80 100, 120 70 S 200 60, 240 40 S 300 50, 310 30" fill="none" stroke="#eb6517" stroke-width="3" />
+                      <path d="M10 90 C 50 60, 80 100, 120 70 S 200 60, 240 40 S 300 50, 310 30 L 310 120 L 10 120 Z" fill="url(#grad1)" />
+                    </svg>
+                  </div>
+                  <div class="rounded-xl border border-slate-200 p-4">
+                    <div class="text-sm text-slate-500">Conversion Rate</div>
+                    <div class="mt-3 flex items-end gap-1 h-32">
+                      <div class="w-6 bg-[#eb6517]/20 rounded-t" style="height: 45%"></div>
+                      <div class="w-6 bg-[#eb6517]/40 rounded-t" style="height: 55%"></div>
+                      <div class="w-6 bg-[#eb6517]/60 rounded-t" style="height: 70%"></div>
+                      <div class="w-6 bg-[#eb6517] rounded-t" style="height: 85%"></div>
+                      <div class="w-6 bg-[#eb6517]/60 rounded-t" style="height: 72%"></div>
+                      <div class="w-6 bg-[#eb6517]/40 rounded-t" style="height: 58%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Automation -->
+      <section id="automation" class="py-16 md:py-24">
+        <div class="mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm order-2 lg:order-1">
+            <div class="flex items-center justify-between">
+              <div class="text-sm text-slate-500">Smart Price Rules</div>
+              <span class="px-2 py-1 rounded-full bg-[#eb6517]/10 text-[#eb6517] text-xs">Automation</span>
+            </div>
+            <div class="mt-4 space-y-3">
+              <div class="flex items-center justify-between rounded-lg border border-slate-200 p-3">
+                <div>
+                  <div class="font-medium">Match top competitor -1%</div>
+                  <div class="text-sm text-slate-500">Floor: $19.90 • Ceiling: $59.90</div>
+                </div>
+                <div class="w-10 h-6 rounded-full bg-[#eb6517]/20 relative">
+                  <div class="absolute left-5 top-0.5 w-5 h-5 bg-[#eb6517] rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between rounded-lg border border-slate-200 p-3">
+                <div>
+                  <div class="font-medium">Weekend promo -5% on linked set</div>
+                  <div class="text-sm text-slate-500">Schedule: Fri 18:00 → Mon 08:00</div>
+                </div>
+                <div class="w-10 h-6 rounded-full bg-slate-200 relative">
+                  <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white border border-slate-300 rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between rounded-lg border border-slate-200 p-3">
+                <div>
+                  <div class="font-medium">Auto‑round to .99</div>
+                  <div class="text-sm text-slate-500">Applied on new price suggestions</div>
+                </div>
+                <div class="w-10 h-6 rounded-full bg-[#eb6517]/20 relative">
+                  <div class="absolute left-5 top-0.5 w-5 h-5 bg-[#eb6517] rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Automate pricing with guardrails</h2>
+            <p class="mt-3 text-slate-600">Create rules once and apply them across linked products. Protect margins with floors and ceilings, schedule promotions, and let Modi do the busywork.</p>
+            <div class="mt-6 flex items-center gap-4">
+              <div class="flex items-center gap-2 text-slate-600"><span class="w-2 h-2 rounded-full bg-[#eb6517]"></span> Safe & predictable</div>
+              <div class="flex items-center gap-2 text-slate-600"><span class="w-2 h-2 rounded-full bg-[#eb6517]"></span> Channel‑aware</div>
+              <div class="flex items-center gap-2 text-slate-600"><span class="w-2 h-2 rounded-full bg-[#eb6517]"></span> Bulk actions</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-16 md:py-24 bg-slate-50/60">
+        <div class="mx-auto max-w-7xl px-6">
+          <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Simple pricing that scales</h2>
+            <p class="mt-3 text-slate-600">Start free. Upgrade when you’re ready. No setup fees.</p>
+          </div>
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="text-sm font-medium text-[#eb6517]">Starter</div>
+              <div class="mt-2 text-3xl font-semibold">$0<span class="text-base font-normal text-slate-500">/mo</span></div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li>Up to 2 stores</li>
+                <li>Basic linking</li>
+                <li>Live dashboard</li>
+              </ul>
+              <a href="#cta" class="mt-6 inline-block w-full text-center px-4 py-2.5 rounded-lg border border-slate-300 hover:border-[#eb6517] hover:text-[#eb6517] transition-colors">Get started</a>
+            </div>
+            <div class="rounded-2xl border-2 border-[#eb6517] bg-white p-6 shadow-md relative">
+              <span class="absolute -top-3 right-4 px-2 py-1 rounded-full bg-[#eb6517] text-white text-xs">Popular</span>
+              <div class="text-sm font-medium text-[#eb6517]">Growth</div>
+              <div class="mt-2 text-3xl font-semibold">$79<span class="text-base font-normal text-slate-500">/mo</span></div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li>Up to 10 stores</li>
+                <li>Advanced linking & rules</li>
+                <li>Unified analytics</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="#cta" class="mt-6 inline-block w-full text-center px-4 py-2.5 rounded-lg bg-[#eb6517] text-white hover:opacity-95 transition-opacity">Start free trial</a>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="text-sm font-medium text-[#eb6517]">Enterprise</div>
+              <div class="mt-2 text-3xl font-semibold">Custom</div>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li>Unlimited stores</li>
+                <li>SSO, audit logs</li>
+                <li>Dedicated CSM</li>
+              </ul>
+              <a href="#cta" class="mt-6 inline-block w-full text-center px-4 py-2.5 rounded-lg border border-slate-300 hover:border-[#eb6517] hover:text-[#eb6517] transition-colors">Contact sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="py-16 md:py-24">
+        <div class="mx-auto max-w-4xl px-6">
+          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-center">FAQ</h2>
+          <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-medium">Which platforms are supported?</h3>
+              <p class="mt-2 text-slate-600 text-sm">We integrate with major commerce platforms and marketplaces. Connect multiple stores per platform in minutes.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-medium">Can I import existing catalogs?</h3>
+              <p class="mt-2 text-slate-600 text-sm">Yes. Import products from each store and link them with powerful matching tools and rules.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-medium">How do price rules apply?</h3>
+              <p class="mt-2 text-slate-600 text-sm">Define rules once and apply across linked sets. Floors/ceilings and rounding keep pricing consistent.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-medium">Is there an API?</h3>
+              <p class="mt-2 text-slate-600 text-sm">Yes. Pull analytics, push updates, and manage automations programmatically with fine-grained access.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section id="cta" class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50">
+        <div class="mx-auto max-w-5xl px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Run all your stores with calm clarity</h2>
+          <p class="mt-3 text-slate-600 max-w-2xl mx-auto">Try Modi free for 14 days. No credit card required. Set up in minutes, see value in hours.</p>
+          <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <a href="#" class="px-6 py-3 rounded-full bg-[#eb6517] text-white font-medium shadow-[0_10px_30px_-10px_rgba(235,101,23,0.7)] hover:shadow-[0_12px_40px_-10px_rgba(235,101,23,0.8)] transition-shadow">Start free trial</a>
+            <a href="#" class="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:border-[#eb6517] hover:text-[#eb6517] transition-colors">Book a demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200/70">
+      <div class="mx-auto max-w-7xl px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3 text-slate-600">
+          <img src="/logo.svg" alt="Modi" class="h-6 w-6" />
+          <span>© {new Date().getFullYear()} Modi</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-slate-600">
+          <a href="#features" class="hover:text-[#eb6517]">Features</a>
+          <a href="#pricing" class="hover:text-[#eb6517]">Pricing</a>
+          <a href="#" class="hover:text-[#eb6517]">Terms</a>
+          <a href="#" class="hover:text-[#eb6517]">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline>
+      const video = document.getElementById('heroVideo');
+      const fallback = document.getElementById('videoFallback');
+      if (video) {
+        const hideFallback = () => fallback?.classList.add('hidden');
+        video.addEventListener('playing', hideFallback, { once: true });
+        video.addEventListener('loadeddata', () => {
+          // Attempt to play on load for browsers blocking autoplay
+          video.play().catch(() => {});
+        });
+        // If source 404s, keep fallback visible
+        video.addEventListener('error', () => fallback?.classList.remove('hidden'));
+      }
+    </script>
+  </body>
+  </html>
