@@ -1,0 +1,27 @@
+---
+// Lightweight YouTube embed using the `lite-youtube-embed` web component
+// Props: videoId (string), title (string), params (optional string)
+const { videoId, title = 'YouTube video', params = '' } = Astro.props;
+
+// Include component styles
+import 'lite-youtube-embed/src/lite-yt-embed.css';
+---
+
+<!-- Register the custom element in the browser -->
+<script is:inline type="module">
+  import 'lite-youtube-embed';
+  // No further code needed; custom element is defined globally
+  // See: https://github.com/paulirish/lite-youtube-embed
+  // `params` supports query params like "rel=0&modestbranding=1"
+  // Title improves accessibility for the play button label
+  // The surrounding container should control the aspect ratio.
+  void 0;
+  
+</script>
+
+<lite-youtube
+  videoid={videoId}
+  playlabel={title}
+  class="block w-full"
+  {...(params ? { params } : {})}
+></lite-youtube>

@@ -42,19 +42,6 @@ import Footer from "../components/Footer.astro";
 
     <Footer />
 
-    <script is:inline>
-      const video = document.getElementById('heroVideo');
-      const fallback = document.getElementById('videoFallback');
-      if (video) {
-        const hideFallback = () => fallback?.classList.add('hidden');
-        video.addEventListener('playing', hideFallback, { once: true });
-        video.addEventListener('loadeddata', () => {
-          // Attempt to play on load for browsers blocking autoplay
-          video.play().catch(() => {});
-        });
-        // If source 404s, keep fallback visible
-        video.addEventListener('error', () => fallback?.classList.remove('hidden'));
-      }
-    </script>
+    
   </body>
   </html>
