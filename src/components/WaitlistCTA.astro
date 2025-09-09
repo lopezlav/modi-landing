@@ -1,0 +1,111 @@
+<section id="cta" class="relative py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 overflow-hidden">
+  <div class="pointer-events-none absolute -top-24 -left-24 h-[420px] w-[420px] rounded-full bg-[#eb6517]/10 blur-3xl"></div>
+  <div class="pointer-events-none absolute -bottom-24 -right-24 h-[520px] w-[520px] rounded-full bg-[#eb6517]/5 blur-3xl"></div>
+
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Unite a la lista de espera de Modi</h2>
+      <p class="mt-3 text-slate-600 max-w-2xl mx-auto">Sé de los primeros en acceder al control unificado de tu comercio online. </br> Contanos un poco sobre tu tienda para conocerte.</p>
+    </div>
+
+    <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="order-2 lg:order-1 lg:col-span-1">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">¿Por qué unirte?</h3>
+          <ul class="mt-4 space-y-3 text-sm text-slate-600">
+            <li class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#eb6517]/15 text-[#eb6517]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg>
+              </span>
+              Acceso anticipado y ayuda de onboarding
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#eb6517]/15 text-[#eb6517]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg>
+              </span>
+              Prioridad para integraciones solicitadas
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#eb6517]/15 text-[#eb6517]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5"><path d="M9 12l2 2 4-4-1.5-1.5L11 11l-1.5-1.5z"/></svg>
+              </span>
+              Soporte personalizado
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="order-1 lg:order-2 lg:col-span-2">
+        <form action="#" method="post" class="rounded-2xl border border-slate-200 bg-white p-6 md:p-8 shadow-sm text-left">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="md:col-span-3">
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <div class="mt-1 relative">
+                <input id="email" name="email" type="email" placeholder="contacto@empresa.com" required class="w-full rounded-xl border border-slate-300/90 bg-white px-4 py-3 pr-11 text-slate-800 placeholder-slate-400 shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] focus:border-[#eb6517] focus:ring-2 focus:ring-[#eb6517]/20 outline-none transition" />
+                <svg class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m8 0a4 4 0 10-8 0 4 4 0 008 0z"/></svg>
+              </div>
+            </div>
+
+            <div class="md:col-span-3 mt-2">
+              <label class="block text-sm font-medium text-slate-700">¿Qué integraciones usas?</label>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <input id="int-ml" name="integrations" type="checkbox" value="Mercadolibre" class="peer/int-ml sr-only" />
+                <label for="int-ml" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/int-ml:bg-[#eb6517] peer-checked/int-ml:text-white peer-checked/int-ml:border-[#eb6517]">Mercadolibre</label>
+
+                <input id="int-tn" name="integrations" type="checkbox" value="Tiendanube" class="peer/int-tn sr-only" />
+                <label for="int-tn" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/int-tn:bg-[#eb6517] peer-checked/int-tn:text-white peer-checked/int-tn:border-[#eb6517]">Tiendanube</label>
+
+                <input id="int-woo" name="integrations" type="checkbox" value="Woocommerce" class="peer/int-woo sr-only" />
+                <label for="int-woo" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/int-woo:bg-[#eb6517] peer-checked/int-woo:text-white peer-checked/int-woo:border-[#eb6517]">Woocommerce</label>
+
+                <input id="int-conta" name="integrations" type="checkbox" value="Contabilium" class="peer/int-conta sr-only" />
+                <label for="int-conta" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/int-conta:bg-[#eb6517] peer-checked/int-conta:text-white peer-checked/int-conta:border-[#eb6517]">Contabilium</label>
+
+                <div>
+                  <input id="int-other" name="integrations" type="checkbox" value="Other" class="peer/int-other sr-only" />
+                  <label for="int-other" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/int-other:bg-[#eb6517] peer-checked/int-other:text-white peer-checked/int-other:border-[#eb6517]">Otro</label>
+                  <div class="mt-2 hidden peer-checked/int-other:block">
+                    <input type="text" name="integration_other" placeholder="Nombra la integración" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm placeholder-slate-400 focus:border-[#eb6517] focus:ring-2 focus:ring-[#eb6517]/20 outline-none transition" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-3">
+              <label class="block text-sm font-medium text-slate-700">¿Actualmente usas otra herramienta?</label>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <input id="tool-rt" name="tools" type="checkbox" value="Real-Trends" class="peer/tool-rt sr-only" />
+                <label for="tool-rt" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/tool-rt:bg-[#eb6517] peer-checked/tool-rt:text-white peer-checked/tool-rt:border-[#eb6517]">Real‑Trends</label>
+
+                <input id="tool-pp" name="tools" type="checkbox" value="EcomExperts" class="peer/tool-pp sr-only" />
+                <label for="tool-pp" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/tool-pp:bg-[#eb6517] peer-checked/tool-pp:text-white peer-checked/tool-pp:border-[#eb6517]">EcomExperts</label>
+
+                <input id="tool-cs" name="tools" type="checkbox" value="Nubimetrics" class="peer/tool-cs sr-only" />
+                <label for="tool-cs" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/tool-cs:bg-[#eb6517] peer-checked/tool-cs:text-white peer-checked/tool-cs:border-[#eb6517]">Nubimetrics</label>
+
+                <input id="tool-tr" name="tools" type="checkbox" value="Producteca" class="peer/tool-tr sr-only" />
+                <label for="tool-tr" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/tool-tr:bg-[#eb6517] peer-checked/tool-tr:text-white peer-checked/tool-tr:border-[#eb6517]">Producteca</label>
+
+                <div>
+                  <input id="tool-other" name="tools" type="checkbox" value="Other" class="peer/tool-other sr-only" />
+                  <label for="tool-other" class="select-none cursor-pointer rounded-full border border-slate-300 px-3 py-1.5 text-sm text-slate-700 hover:border-[#eb6517] transition peer-checked/tool-other:bg-[#eb6517] peer-checked/tool-other:text-white peer-checked/tool-other:border-[#eb6517]">Otra</label>
+                  <div class="mt-2 hidden peer-checked/tool-other:block">
+                    <input type="text" name="tool_other" placeholder="Nombra la herramienta" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm placeholder-slate-400 focus:border-[#eb6517] focus:ring-2 focus:ring-[#eb6517]/20 outline-none transition" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-3 flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-2">
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-[#eb6517] px-6 py-3 text-white font-medium shadow-[0_10px_30px_-10px_rgba(235,101,23,0.7)] hover:shadow-[0_12px_40px_-10px_rgba(235,101,23,0.8)] transition-shadow">
+                Anotarme
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </button>
+              <p class="text-xs text-slate-500">Sin spam: solo te contactaremos por acceso y novedades del producto.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

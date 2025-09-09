@@ -1,30 +1,3 @@
-# Astro Starter Kit: Minimal
-
-```sh
-npm create astro@latest -- --template minimal
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -38,6 +11,24 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+TODO:
+- waitlist cta con encuesta:
+    - [ ] que integraciones usa
+    - [ ] si usa ERP y cual
+    - [ ] si usa mas de 1 moneda (dolar)
+    - [ ] algo sobre como organiza las compras de restock?
+    - [ ] preguntar sobre que funcionalidad interesa
+        - sincronizacion de precios
+        - automatizacion de promociones
+        - automatizacion de precios
+        - analiticas multi-tiendas
+        - incluir ventas offline en el analisis
+        - monitoreo de ventas en tiempo real
+        - administracion de ordenes de compra
+        - encontrar posibles problemas en la tienda
+        - estrategias para maximizar la rentabilidad
+- escribir algo sobre las funcionalidades detalladas mas arriba
+
+para modi:
+las "analyticas" deben formar parte de la vista moderacion. cada producto tiene que, ademas de mostrar su pequena analitica, mostrar como le va con respecto a otros productos del mismo proveedor: si es el mas vendido, en que puesto esta, cuanto de participacion tiene de las ventas de ese proveedor, cuanto de participacion tiene de las ventas totales

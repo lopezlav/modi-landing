@@ -1,0 +1,60 @@
+<!-- Hero -->
+<section class="relative overflow-hidden">
+  <div class="pointer-events-none absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-[#eb6517]/10 blur-3xl"></div>
+  <div class="pointer-events-none absolute top-20 -right-40 h-[500px] w-[500px] rounded-full bg-[#eb6517]/5 blur-3xl"></div>
+
+  <div class="mx-auto max-w-7xl px-6 pt-14 pb-10 md:pt-24 md:pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full border border-slate-200 text-slate-600">
+          <span class="w-2 h-2 rounded-full bg-[#eb6517]"></span>
+          Unificá y analizá todos tus puntos de venta
+        </p>
+        <h1 class="mt-4 text-4xl md:text-6xl font-semibold leading-tight tracking-tight">
+          Un lugar para todas tus tiendas
+        </h1>
+        <p class="mt-4 text-base md:text-lg text-slate-600 max-w-xl">
+          Relacioná productos entre plataformas, monitoreá el rendimiento en tiempo real, consultá analiticas globales, planificá tus compras y automatizá precios con precisión. </br>
+          Una herramienta distinta hecha para integrarse, diseñado para ayudarte a tomar decisiones.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#cta" class="px-6 py-3 rounded-full bg-[#eb6517] text-white font-medium shadow-[0_10px_30px_-10px_rgba(235,101,23,0.7)] hover:shadow-[0_12px_40px_-10px_rgba(235,101,23,0.8)] transition-shadow">Anotate ahora!</a>
+          <a href="#features" class="px-6 py-3 rounded-full border border-slate-300 text-slate-700 hover:border-[#eb6517] hover:text-[#eb6517] transition-colors">Ver características</a>
+        </div>
+        <div class="mt-8 flex items-center gap-6 text-slate-500 text-sm">
+          <div class="flex -space-x-2">
+            <div class="w-8 h-8 rounded-full bg-slate-200 border border-white"></div>
+            <div class="w-8 h-8 rounded-full bg-slate-300 border border-white"></div>
+            <div class="w-8 h-8 rounded-full bg-slate-200 border border-white"></div>
+          </div>
+          <p>Confiado por equipos multimarcas y agencias</p>
+        </div>
+      </div>
+
+      <div class="relative" id="demo">
+        <div class="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-white to-slate-50 shadow-[0_40px_100px_-30px_rgba(2,6,23,0.25)]"></div>
+        <div class="rounded-2xl ring-1 ring-slate-200 overflow-hidden">
+          <div class="bg-slate-900/95 text-white text-xs px-3 py-2 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-red-500"></span>
+            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+            <span class="w-2 h-2 rounded-full bg-green-500"></span>
+          </div>
+          <div class="relative">
+            <video id="heroVideo" class="block w-full aspect-[16/10] bg-slate-100 object-cover" autoplay muted loop playsinline>
+              <source src="/demo.mp4" type="video/mp4" />
+            </video>
+            <div id="videoFallback" class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-50 to-white border-t border-slate-100">
+              <div class="text-center px-6">
+                <div class="mx-auto mb-4 w-12 h-12 rounded-full bg-[#eb6517]/15 flex items-center justify-center text-[#eb6517]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M8 5v14l11-7z"/></svg>
+                </div>
+                <p class="text-slate-700 font-medium">Coloca un archivo de demo en <code class="px-1.5 py-0.5 rounded bg-slate-100 border border-slate-200">public/demo.mp4</code></p>
+                <p class="text-slate-500 text-sm mt-1">Se reproduce automáticamente en silencio. Optimizado para 16:10.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
