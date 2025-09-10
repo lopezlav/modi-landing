@@ -41,15 +41,16 @@
           </div>
           <div class="relative">
             <div class="relative w-full aspect-video bg-slate-100">
-              <iframe
-                class="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0"
-                title="Demo de Modi en YouTube"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <video
+                id="demo-video"
+                class="absolute inset-0 w-full h-full object-cover"
+                src="/src/videos/demo-modi.mp4"
+                title="Demo de Modi"
+                autoplay
+                muted
+                controls
+                preload="metadata"
+              ></video>
             </div>
           </div>
         </div>
@@ -57,3 +58,18 @@
     </div>
   </div>
 </section>
+
+<script>
+  const video = document.getElementById('demo-video') as HTMLVideoElement;
+  let hasInteracted = false;
+
+  const unmuteVideo = () => {
+    if (!hasInteracted && video) {
+      video.muted = false;
+      hasInteracted = true;
+    }
+  };
+
+  video?.addEventListener('click', unmuteVideo);
+  video?.addEventListener('pause', unmuteVideo);
+</script>
